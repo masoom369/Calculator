@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+    <header class="mt-5">
+        <center>
+            <h1>Calculator</h1>
+        </center>
+    </header>
+    <main>
+        <div class="calculator">
+            <div class="output">
+                <center><label for="output">
+                        <h3>Calculator</h3>
+                    </label></center>
+                <input type="text" id="output" class="form-control" oninput="validateInput(this)">
+            </div>
+            <div class="buttons">
+                <button class="btn btn-secondary" onclick="appendToOutput('7')">7</button>
+                <button class="btn btn-secondary" onclick="appendToOutput('8')">8</button>
+                <button class="btn btn-secondary" onclick="appendToOutput('9')">9</button>
+                <button class="btn btn-light" onclick="appendToOutput('+')">+</button>
+
+                <button class="btn btn-secondary" onclick="appendToOutput('4')">4</button>
+                <button class="btn btn-secondary" onclick="appendToOutput('5')">5</button>
+                <button class="btn btn-secondary" onclick="appendToOutput('6')">6</button>
+                <button class="btn btn-light" onclick="appendToOutput('-')">-</button>
+
+                <button class="btn btn-secondary" onclick="appendToOutput('1')">1</button>
+                <button class="btn btn-secondary" onclick="appendToOutput('2')">2</button>
+                <button class="btn btn-secondary" onclick="appendToOutput('3')">3</button>
+                <button class="btn btn-light" onclick="appendToOutput('*')">*</button>
+
+                <button class="btn btn-secondary" onclick="appendToOutput('0')">0</button>
+                <button class="btn btn-secondary" onclick="appendToOutput('.')">.</button>
+                <button class="btn btn-secondary" onclick="calculate()">=</button>
+                <button class="btn btn-light" onclick="appendToOutput('/')">/</button>
+
+                <button class="clear btn btn-danger" onclick="clearOutput()">Clear</button>
+            </div>
+        </div>
+    </main></div>
+    <footer>
+        <p>&copy; copyright 2024 made by <a href="https://github.com/masoom369">M.Masoom Mallah</a></p>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full viewport height */
+  margin: 0;
+  background-color: rgb(175, 238, 238);
+}
+
+.wrapper {
+  flex: 1; /* Flex to grow and fill remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px; /* Adjust as needed */
+  max-width: 100%; /* Ensure wrapper doesn't exceed viewport */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Adjust maximum width for responsiveness */
+  margin: auto; /* Center content horizontally */
+}
+
+.calculator {
+  width: 100%; /* Full width on smaller screens */
+  max-width: 300px; /* Limit maximum width */
+  background-color: rgba(87, 170, 149, 0.459);
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.output {
+  margin-bottom: 10px;
+}
+
+#output {
+  background-color: azure;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 18px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+button {
+  font-size: 20px;
+  width: 100%;
+  padding: 12px;
+}
+
+.clear {
+  grid-column: span 4; /* Span all columns */
+}
+
+footer {
+  background-color: rgba(87, 170, 149, 0.459);
+  flex-shrink: 0; /* Prevent footer from shrinking */
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+/* rgb(180, 250, 221) */
